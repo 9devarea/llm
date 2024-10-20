@@ -43,7 +43,7 @@ const ChatFeedbackContentDialog = ({ show, onCancel, onConfirm }) => {
             aria-describedby='alert-dialog-description'
         >
             <DialogTitle sx={{ fontSize: '1rem' }} id='alert-dialog-title'>
-                Provide additional feedback
+                Fornisci un feedback aggiuntivo
             </DialogTitle>
             <DialogContent>
                 <Box sx={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
@@ -54,7 +54,7 @@ const ChatFeedbackContentDialog = ({ show, onCancel, onConfirm }) => {
                         multiline={true}
                         name='feedbackContentInput'
                         onChange={onChange}
-                        placeholder='What do you think of the response?'
+                        placeholder='Cosa ne pensi della risposta?'
                         rows={4}
                         value={feedbackContent}
                         sx={{ width: '100%' }}
@@ -62,9 +62,9 @@ const ChatFeedbackContentDialog = ({ show, onCancel, onConfirm }) => {
                 </Box>
             </DialogContent>
             <DialogActions>
-                <Button onClick={onCancel}>Cancel</Button>
+                <Button onClick={onCancel}>Annulla</Button>
                 <StyledButton variant='contained' onClick={onSave}>
-                    Submit Feedback
+                    Invia Feedback
                 </StyledButton>
             </DialogActions>
         </Dialog>
